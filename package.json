@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "dev:mock": "cross-env PET_MOCK=mock npm run dev"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/PetStore-TE/pet_adoption_app#readme",
   "devDependencies": {
+    "cross-env": "^6.0.3",
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
